@@ -5,15 +5,9 @@ import routes from './routes';
 
 const app = express();
 
-/**
- * Disponibiliza o producer para todas rotas
- */
 app.use(cors());
 app.use(express.json());
 
-/**
- * Cadastra as rotas da aplicação
- */
 app.use(routes);
 
 async function run() {
